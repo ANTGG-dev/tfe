@@ -1,0 +1,2 @@
+scope,job,event,timestamp_utc,source,line,detail
+campaign_unassigned,not_recorded,KeyboardInterrupt,2026-10-08T23:58:24.451688+00:00,V2/mdpi_revision_supreme_v2_640/failures.jsonl,1,No job identifier or causal detail recorded. Cannot attribute to OOM or hardware.

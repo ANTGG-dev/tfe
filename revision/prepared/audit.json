@@ -1,0 +1,87 @@
+{
+  "original_images": {
+    "train": 840,
+    "valid": 120,
+    "test": 40
+  },
+  "prepared_images": {
+    "train": 828,
+    "valid": 120,
+    "test": 40
+  },
+  "original_source_overlap": {
+    "DJI_0185": [
+      "test",
+      "train"
+    ]
+  },
+  "original_pixel_overlap": {},
+  "excluded_images": [
+    {
+      "image": "D:\\Tesis\\cuerposAgua\\dataset\\train\\images\\DJI_0185_jpg.rf.0698efc1b444e14764a1bf445ac33cb6.jpg",
+      "split": "train",
+      "frame": "DJI_0185"
+    },
+    {
+      "image": "D:\\Tesis\\cuerposAgua\\dataset\\train\\images\\DJI_0185_jpg.rf.19bbab09fb778ed7d9ccd692e8dbd0a4.jpg",
+      "split": "train",
+      "frame": "DJI_0185"
+    },
+    {
+      "image": "D:\\Tesis\\cuerposAgua\\dataset\\train\\images\\DJI_0185_jpg.rf.1b50861aefc60945f2dbdcc43324cdbd.jpg",
+      "split": "train",
+      "frame": "DJI_0185"
+    },
+    {
+      "image": "D:\\Tesis\\cuerposAgua\\dataset\\train\\images\\DJI_0185_jpg.rf.1d0fcdccbcfc842b594cb350ba9bf0f9.jpg",
+      "split": "train",
+      "frame": "DJI_0185"
+    },
+    {
+      "image": "D:\\Tesis\\cuerposAgua\\dataset\\train\\images\\DJI_0185_jpg.rf.22d2cd4bd9832b914ae7126ad9d7d4e0.jpg",
+      "split": "train",
+      "frame": "DJI_0185"
+    },
+    {
+      "image": "D:\\Tesis\\cuerposAgua\\dataset\\train\\images\\DJI_0185_jpg.rf.2f162816107b18712c657ee85fb0ac1a.jpg",
+      "split": "train",
+      "frame": "DJI_0185"
+    },
+    {
+      "image": "D:\\Tesis\\cuerposAgua\\dataset\\train\\images\\DJI_0185_jpg.rf.3e44fb44a360f2ad0ec3d8222ac4b957.jpg",
+      "split": "train",
+      "frame": "DJI_0185"
+    },
+    {
+      "image": "D:\\Tesis\\cuerposAgua\\dataset\\train\\images\\DJI_0185_jpg.rf.56acb449a299237d0d902facbc797e22.jpg",
+      "split": "train",
+      "frame": "DJI_0185"
+    },
+    {
+      "image": "D:\\Tesis\\cuerposAgua\\dataset\\train\\images\\DJI_0185_jpg.rf.70555c24eba3b0165c3ddd65be6db35a.jpg",
+      "split": "train",
+      "frame": "DJI_0185"
+    },
+    {
+      "image": "D:\\Tesis\\cuerposAgua\\dataset\\train\\images\\DJI_0185_jpg.rf.8b92235071f24e63eeea756041f6e1d5.jpg",
+      "split": "train",
+      "frame": "DJI_0185"
+    },
+    {
+      "image": "D:\\Tesis\\cuerposAgua\\dataset\\train\\images\\DJI_0185_jpg.rf.99901619090f62bfd3be79305c324d61.jpg",
+      "split": "train",
+      "frame": "DJI_0185"
+    },
+    {
+      "image": "D:\\Tesis\\cuerposAgua\\dataset\\train\\images\\DJI_0185_jpg.rf.f39792a5a2a4aa9cde50ce1c07475af7.jpg",
+      "split": "train",
+      "frame": "DJI_0185"
+    }
+  ],
+  "near_duplicate_candidates": 2,
+  "group_basis": "filename-inferred source frame; flight/scene independence UNVERIFIED",
+  "test_policy": "all original test images retained; overlapping development families excluded",
+  "native_dimensions": {
+    "640x640": 1000
+  }
+}

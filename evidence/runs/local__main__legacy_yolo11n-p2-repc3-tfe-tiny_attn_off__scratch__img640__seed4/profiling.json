@@ -1,0 +1,21 @@
+{
+  "params": 11077586,
+  "GFLOPs": 100.2908688,
+  "input_size": 640,
+  "batch": 1,
+  "precision": "FP32",
+  "backend": "PyTorch CUDA eager",
+  "warmup": 20,
+  "iterations": 100,
+  "fused_supported_layers": true,
+  "TFE_structurally_merged": false,
+  "forward_mean_ms": 9.569966373443604,
+  "forward_p50_ms": 9.494383811950684,
+  "forward_p95_ms": 10.0740975856781,
+  "forward_peak_allocated_mb": 355.18994140625,
+  "pipeline_mean_ms": 11.029211995191872,
+  "pipeline_p95_ms": 11.290240031667054,
+  "pipeline_includes": "preprocess + H2D + model + decoder/NMS when applicable + coordinate restoration",
+  "end_to_end_model": false,
+  "power_budget_note": "desktop RTX measurements do not establish UAV/Jetson power, latency or endurance"
+}

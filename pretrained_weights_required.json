@@ -1,0 +1,26 @@
+[
+  {
+    "name": "rtdetr-l.pt",
+    "relative_path": "${ROOT}/revision/models/rtdetr-l.pt",
+    "sha256": "6de60b10d4bc566f00cda0f5b4d64afe4b66d48dc9695d2171effb7859d8e73f",
+    "bytes": 66511432
+  },
+  {
+    "name": "yolo11m.pt",
+    "relative_path": "${ROOT}/revision/models/yolo11m.pt",
+    "sha256": "d5ffc1a674953a08e11a8d21e022781b1b23a19b730afc309290bd9fb5305b95",
+    "bytes": 40684120
+  },
+  {
+    "name": "yolo11n.pt",
+    "relative_path": "${ROOT}/revision/models/yolo11n.pt",
+    "sha256": "0ebbc80d4a7680d14987a577cd21342b65ecfd94632bd9a8da63ae6417644ee1",
+    "bytes": 5613764
+  },
+  {
+    "name": "yolo11s.pt",
+    "relative_path": "${ROOT}/revision/models/yolo11s.pt",
+    "sha256": "85a76fe86dd8afe384648546b56a7a78580c7cb7b404fc595f97969322d502d5",
+    "bytes": 19313732
+  }
+]

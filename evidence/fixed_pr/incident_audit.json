@@ -1,0 +1,23 @@
+{
+  "scope_counts": {
+    "main": 150,
+    "grouped_cv": 75,
+    "batch8": 10,
+    "external_inference": 20
+  },
+  "all_235_training_stop_epoch_150": true,
+  "training_console_logs": 235,
+  "error_signature_lines": 0,
+  "recorded_events": [
+    {
+      "scope": "campaign_unassigned",
+      "job": "not_recorded",
+      "event": "KeyboardInterrupt",
+      "timestamp_utc": "2026-10-08T23:58:24.451688+00:00",
+      "source": "V2/mdpi_revision_supreme_v2_640/failures.jsonl",
+      "line": 1,
+      "detail": "No job identifier or causal detail recorded. Cannot attribute to OOM or hardware."
+    }
+  ],
+  "limits": "Retained log audit, not exhaustive operational history. Logs are append-mode but external console transcripts and OS/hardware telemetry were not retained. An unassigned KeyboardInterrupt cannot establish its cause or affected job. Completion is not proof of uninterrupted execution."
+}

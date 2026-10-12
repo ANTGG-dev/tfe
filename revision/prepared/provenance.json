@@ -1,0 +1,32 @@
+{
+  "source_url": "https://universe.roboflow.com/lumsworkspace/river-pollution-master/dataset/5",
+  "project_url": "https://universe.roboflow.com/lumsworkspace/river-pollution-master",
+  "provider": "lumsworkspace via Roboflow Universe",
+  "version": 5,
+  "generated_date": "2023-07-30",
+  "license": "CC-BY-4.0",
+  "checked_date": "2026-09-30",
+  "upstream_project_images": 110,
+  "upstream_version_images": 1000,
+  "upstream_split_images": {
+    "train": 840,
+    "valid": 120,
+    "test": 40
+  },
+  "preprocessing": [
+    "Tile: 2 rows x 2 columns",
+    "Auto-Orient",
+    "Stretch resize to 640x640"
+  ],
+  "training_outputs_per_example": 3,
+  "upstream_augmentations": [
+    "Horizontal and vertical flip",
+    "90-degree clockwise, counter-clockwise and upside-down rotation",
+    "Bounding-box horizontal and vertical flip",
+    "Bounding-box 90-degree clockwise, counter-clockwise and upside-down rotation"
+  ],
+  "local_correspondence": "Version counts, classes, dimensions and 12 train / 4 validation-test derivatives per DJI filename family agree with local files. User identified this source. Full upstream export checksums unavailable.",
+  "independence": "DJI_0185 filename family appears in train and test; all 12 training derivatives conservatively excluded. Filenames infer source identity but flights/scenes and global uniqueness of DJI names are unverified.",
+  "processing_order": "Roboflow lists tiling as preprocessing and augmentation only for training. Local derivatives are already exported; exact source-frame assignment chronology not recoverable from files. Grouped CV uses complete exported families, never tile-level random splitting.",
+  "claims": "This is a public reused dataset, not a proprietary dataset acquired by the paper authors. 1000 exported tiles/augmentations are not 1000 independent source frames. No flight, camera, altitude or annotation-consensus metadata should be invented."
+}

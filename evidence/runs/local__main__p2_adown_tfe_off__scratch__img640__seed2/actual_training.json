@@ -1,0 +1,65 @@
+{
+  "optimizer_class": "AdamW",
+  "optimizer_defaults": {
+    "lr": 0.001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.01,
+    "amsgrad": false,
+    "maximize": false,
+    "capturable": false,
+    "differentiable": false,
+    "decoupled_weight_decay": true
+  },
+  "optimizer_groups": [
+    {
+      "lr": 2.767220000000007e-05,
+      "initial_lr": 0.001667,
+      "weight_decay": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "parameters": 2877352
+    },
+    {
+      "lr": 2.767220000000007e-05,
+      "initial_lr": 0.001667,
+      "weight_decay": 0.0,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "parameters": 11776
+    },
+    {
+      "lr": 2.767220000000007e-05,
+      "initial_lr": 0.001667,
+      "weight_decay": 0.0,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "parameters": 12040
+    }
+  ],
+  "best_epoch": 74,
+  "stop_epoch": 150,
+  "cuda_training_peak_allocated_mb": 2292.76806640625,
+  "cuda_training_peak_reserved_mb": 2616.0,
+  "checkpoint": "${ROOT}/V2/mdpi_revision_supreme_v2_640/jobs/local__main__p2_adown_tfe_off__scratch__img640__seed2/weights/best.pt",
+  "regime": "scratch",
+  "runtime": {
+    "python": "3.12.14 (main, Sep 29 2026, 15:00:58) [MSC v.1944 64 bit (AMD64)]",
+    "torch": "2.10.0+cu128",
+    "cuda": "12.8",
+    "ultralytics": "8.4.21",
+    "backend_path": null,
+    "attention_backend": null,
+    "tf32_matmul": false,
+    "tf32_cudnn": true
+  }
+}

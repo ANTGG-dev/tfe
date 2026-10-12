@@ -1,0 +1,51 @@
+# Ultralytics YOLO11n + P2 + ConvNeXt-Lite backbone (CNX)
+nc: 2
+scales:
+  n: [0.50, 0.25, 1024]
+
+backbone:
+  # P2/4
+  - [-1, 1, CNXStem, [64]]                 # 0: out 64, stride 4
+  - [-1, 1, CNXStage, [2, 7, 0.0, true]]   # 1: (n=2, k=7, drop=0, eca=ON)  -> P2
+
+  # P3/8
+  - [-1, 1, CNXDown, [128]]                # 2
+  - [-1, 1, CNXStage, [2, 7, 0.0, true]]   # 3
+
+  # P4/16
+  - [-1, 1, CNXDown, [256]]                # 4
+  - [-1, 1, CNXStage, [2, 7, 0.0, true]]   # 5
+
+  # P5/32
+  - [-1, 1, CNXDown, [512]]                # 6
+  - [-1, 1, CNXStage, [1, 7, 0.0, true]]   # 7
+
+head:
+  # Top-down FPN
+  - [-1, 1, nn.Upsample, [None, 2, "nearest"]]   # 8: P5 -> P4
+  - [[-1, 5], 1, Concat, [1]]                    # 9: cat P4
+  - [-1, 2, C3k2, [256, False]]                  # 10: P4 head
+
+  - [-1, 1, nn.Upsample, [None, 2, "nearest"]]   # 11: P4 -> P3
+  - [[-1, 3], 1, Concat, [1]]                    # 12: cat P3
+  - [-1, 2, C3k2, [128, False]]                  # 13: P3 head
+
+  - [-1, 1, nn.Upsample, [None, 2, "nearest"]]   # 14: P3 -> P2
+  - [[-1, 1], 1, Concat, [1]]                    # 15: cat P2
+  - [-1, 2, C3k2, [64, False]]                   # 16: P2 head (small objects)
+
+  # Bottom-up PAN
+  - [-1, 1, Conv, [128, 3, 2]]                   # 17: P2 -> P3
+  - [[-1, 13], 1, Concat, [1]]                   # 18
+  - [-1, 2, C3k2, [128, False]]                  # 19: P3 out
+
+  - [-1, 1, Conv, [256, 3, 2]]                   # 20: P3 -> P4
+  - [[-1, 10], 1, Concat, [1]]                   # 21
+  - [-1, 2, C3k2, [256, False]]                  # 22: P4 out
+
+  - [-1, 1, Conv, [512, 3, 2]]                   # 23: P4 -> P5
+  - [[-1, 7], 1, Concat, [1]]                    # 24: cat backbone P5
+  - [-1, 2, C3k2, [512, True]]                   # 25: P5 out
+
+  # Detect(P2, P3, P4, P5)
+  - [[16, 19, 22, 25], 1, Detect, [nc]]
