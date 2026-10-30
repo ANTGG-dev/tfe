@@ -1,0 +1,65 @@
+{
+  "archive_sha256": "d8fe0b824935a0ae3a5d1252f0aea5e23600e38059de89b12b53fe07afd18e30",
+  "source": "FloW-Img official training/test directory layout; downloaded by user",
+  "split_seed": 20261028,
+  "splits": {
+    "train": {
+      "images": 960,
+      "boxes": 2638,
+      "empty_images": 0,
+      "source_folder_counts": {
+        "ningbo_5_select_select_new": 151,
+        "ningbo4_select_select_new": 92,
+        "myPerson": 307,
+        "ningbo1_select_select_new": 95,
+        "Saved_Pic_3": 84,
+        "Saved_Pic": 86,
+        "Saved_Pic_2": 104,
+        "ningbo_2_select_select_new": 26,
+        "ningbo_3_select_select_new": 13,
+        "images": 2
+      }
+    },
+    "val": {
+      "images": 240,
+      "boxes": 610,
+      "empty_images": 0,
+      "source_folder_counts": {
+        "ningbo1_select_select_new": 22,
+        "myPerson": 84,
+        "ningbo_5_select_select_new": 38,
+        "ningbo4_select_select_new": 18,
+        "Saved_Pic_3": 23,
+        "Saved_Pic": 17,
+        "Saved_Pic_2": 30,
+        "ningbo_2_select_select_new": 7,
+        "ningbo_3_select_select_new": 1
+      }
+    },
+    "test": {
+      "images": 800,
+      "boxes": 2024,
+      "empty_images": 0,
+      "source_folder_counts": {
+        "ningbo_4_select_select_new": 122,
+        "Saved_Pic_4": 96,
+        "myPerson": 362,
+        "Saved_Pic_5": 93,
+        "ningbo5_select_select_new": 50,
+        "ningbo_1_select_select_new": 12,
+        "ningbo3_select_select_new": 5,
+        "ningbo2_select_select_new": 4,
+        "\u65b0\u6dfb\u52a0\u56fe\u7247": 33,
+        "ningbo_5_select_select_new": 10,
+        "ningbo1_select_select_new": 3,
+        "Saved_Pic": 1,
+        "Saved_Pic_3": 5,
+        "Saved_Pic_2": 2,
+        "ningbo4_select_select_new": 2
+      }
+    }
+  },
+  "boxes_in_download": 5272,
+  "changes": [],
+  "limitations": "Original split shares source-folder labels; temporal/site independence not established. Derived validation is random within official training, grouping identical file hashes. frame field is an image identifier, NOT a video group. Paper reports 5271 boxes; downloaded XML files contain 5272 before processing. VOC coordinates are interpreted directly as xyxy continuous bounds, no +/-1 adjustment. No test tuning."
+}

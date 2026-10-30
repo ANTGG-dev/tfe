@@ -10,11 +10,14 @@ Clone this repository, then follow the installation and data preparation steps b
 ## Scope
 150 main training jobs (30 configurations, five seeds), 75 grouped-CV jobs,
 10 physical-batch-8 sensitivity jobs; 20 RiSID evaluations reuse source weights.
+The FloW follow-up adds 20 supervised runs (four architectures, five seeds);
+see [FloW reproduction](FLOW.md) for the frozen split, best checkpoints, and calculations.
 The exact custom Ultralytics 8.4.21 source includes TinyTFEStage/TinySCA,
 ADown/RepC3, parsers and architecture YAMLs. Upstream license/notices are
 preserved in cuerposAgua/ultralytics_fork/LICENSE (AGPL-3.0).
 The source snapshot includes upstream features not evaluated in the paper;
-only plans/training_jobs.json defines the reported experimental scope.
+plans/training_jobs.json defines the original scope; evidence/flow/frozen_plan.json
+defines the additional FloW scope.
 
 ## Environment and installation
 Recorded environment: Windows, Python 3.12, PyTorch 2.10.0+cu128,
@@ -31,7 +34,9 @@ recorded package remains available from a registry. No packages are installed
 or downloaded automatically by the verification script.
 
 ## Data and checkpoints
-Images and model checkpoints are intentionally not embedded. Obtain
+Dataset images and original-experiment checkpoints are not embedded. The 20
+FloW best.pt checkpoints are included under evidence/flow/jobs; intermediate
+and last-epoch checkpoints are excluded. Obtain
 River-Pollution-Master v5 (lumsworkspace, Roboflow Universe, CC BY 4.0) and
 RiSID v2 (https://doi.org/10.5281/zenodo.16927238) from their cited sources.
 Place the corrected local export at revision/prepared/dataset/{train,valid,test}/

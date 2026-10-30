@@ -1,0 +1,5 @@
+{
+  "runs": 20,
+  "analysis": "paired image bootstrap; 3 planned macro contrasts; pointwise class intervals; training-seed SD reported separately",
+  "limitations": "Conditional intervals do not include new-training uncertainty. Image resampling assumes independence not established for related scenes; CIs may be optimistic."
+}

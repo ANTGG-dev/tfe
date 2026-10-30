@@ -14,3 +14,8 @@ venv/
 portable_jobs/
 revision/prepared/dataset/
 runs/
+
+# FloW reproduction outputs and raw data
+revision/flow/
+revision/flow_training/
+!evidence/flow/jobs/*/weights/best.pt

@@ -1,0 +1,5 @@
+{
+  "images": 800,
+  "selection": "validation only",
+  "bootstrap": "performed jointly after all models using images; dependence limitation explicit"
+}

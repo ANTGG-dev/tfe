@@ -1,0 +1,89 @@
+[
+  {
+    "model": "p2",
+    "reference": "baseline",
+    "metric": "AP50-95",
+    "units": "percentage points",
+    "bootstrap_repeats": 1000,
+    "images": 800,
+    "conditional_on_fitted_models": true,
+    "macro": {
+      "mean_difference": 1.1496388778209965,
+      "pointwise_95_ci": [
+        0.7365272042000327,
+        1.5948585817516847
+      ],
+      "valid_draws": 1000,
+      "bonferroni_3_contrasts_98_333_ci": [
+        0.6658742868864307,
+        1.6891916339074302
+      ]
+    },
+    "bottle": {
+      "mean_difference": 1.1496388778209965,
+      "pointwise_95_ci": [
+        0.7365272042000327,
+        1.5948585817516847
+      ],
+      "valid_draws": 1000
+    }
+  },
+  {
+    "model": "p2_adown",
+    "reference": "p2",
+    "metric": "AP50-95",
+    "units": "percentage points",
+    "bootstrap_repeats": 1000,
+    "images": 800,
+    "conditional_on_fitted_models": true,
+    "macro": {
+      "mean_difference": -1.0918750877772554,
+      "pointwise_95_ci": [
+        -1.536161869945029,
+        -0.6721786091730122
+      ],
+      "valid_draws": 1000,
+      "bonferroni_3_contrasts_98_333_ci": [
+        -1.604736572649287,
+        -0.5749444190157439
+      ]
+    },
+    "bottle": {
+      "mean_difference": -1.0918750877772554,
+      "pointwise_95_ci": [
+        -1.536161869945029,
+        -0.6721786091730122
+      ],
+      "valid_draws": 1000
+    }
+  },
+  {
+    "model": "p2_adown_tfe_off",
+    "reference": "p2_adown",
+    "metric": "AP50-95",
+    "units": "percentage points",
+    "bootstrap_repeats": 1000,
+    "images": 800,
+    "conditional_on_fitted_models": true,
+    "macro": {
+      "mean_difference": 1.2621263102918667,
+      "pointwise_95_ci": [
+        0.7494395422932038,
+        1.7813352574367685
+      ],
+      "valid_draws": 1000,
+      "bonferroni_3_contrasts_98_333_ci": [
+        0.6390426349998654,
+        1.8699807099442158
+      ]
+    },
+    "bottle": {
+      "mean_difference": 1.2621263102918667,
+      "pointwise_95_ci": [
+        0.7494395422932038,
+        1.7813352574367685
+      ],
+      "valid_draws": 1000
+    }
+  }
+]
